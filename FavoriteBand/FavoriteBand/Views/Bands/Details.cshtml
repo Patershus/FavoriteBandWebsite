@@ -1,14 +1,35 @@
 ﻿@using FavoriteBand.Models
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
     <title> </title>
 </head>
 <body>
-    @(ViewData["Band"].ToString())
+    <div>
+        <h1>@(((Band)ViewData["Band"]).Name)</h1>
 
-    <img src="images\Band1.jpg" />
-  
+        <p>@ViewBag.Band.Description</p>
+        <br />
+    </div>
+    <div>
+        <img src=@($"/Band{ViewBag.Band.Id}.jpg") />
+    </div>
+    <div>
+        <h4>Albums</h4>
+        <ul>
+            @foreach (var album in ViewBag.Band.AlbumList)
+            {
+                <li>@album</li>
+            }
+        </ul>
+    </div>
+    <div>
+        @Html.ActionLink("Hem", "", "Bands")
+    </div>
+
 
 </body>
 </html>
