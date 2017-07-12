@@ -1,0 +1,20 @@
+﻿@using FavoriteBand.Models
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+    <ul>
+        @foreach (var item in (Band[])ViewData["Bands"])
+        {
+            <li>@item.Name  @item.Description</li>
+        }
+
+
+    </ul>
+
+</body>
+</html>
