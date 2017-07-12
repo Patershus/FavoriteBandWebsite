@@ -1,0 +1,19 @@
+﻿body {
+    background-color: rgb(110,110,110);
+    color: white;
+    
+}
+ul {
+    list-style-type: none;
+}
+li{
+    color: yellow;
+}
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+h4,p{
+    color: rgb(190,190,190);
+}
