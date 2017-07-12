@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Views\Bands\Images\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
   <ItemGroup>

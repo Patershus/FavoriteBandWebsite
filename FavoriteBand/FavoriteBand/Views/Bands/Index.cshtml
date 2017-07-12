@@ -10,7 +10,7 @@
     <ul>
         @foreach (var item in (Band[])ViewData["Bands"])
         {
-            <li>@item.Name  @item.Description</li>
+            <li><a href="bands/details/@item.Id">@item.Name </a> </li>
         }
 
 
