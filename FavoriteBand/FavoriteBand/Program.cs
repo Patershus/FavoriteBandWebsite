@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 namespace FavoriteBand
 {
     public class Program
-    {
+    {//test git
         public static void Main(string[] args)
         {
             var host = new WebHostBuilder()
