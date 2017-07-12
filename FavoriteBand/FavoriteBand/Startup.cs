@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.StaticFiles;
+
 
 namespace FavoriteBand
 {
@@ -24,7 +26,7 @@ namespace FavoriteBand
         {
             
             app.UseDeveloperExceptionPage();
-            
+            app.UseStaticFiles();
             app.UseMvcWithDefaultRoute();
         }
     }

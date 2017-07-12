@@ -5,13 +5,20 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Views\Bands\Images\" />
+    <Compile Remove="Views\Bands\Images\**" />
+    <Content Remove="Views\Bands\Images\**" />
+    <EmbeddedResource Remove="Views\Bands\Images\**" />
+    <None Remove="Views\Bands\Images\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="wwwroot\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
     <PackageReference Include="Microsoft.AspNetCore" Version="1.1.2" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.3" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.2" />
   </ItemGroup>
 
 </Project>
